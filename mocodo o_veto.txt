@@ -1,0 +1,20 @@
+résults, 1n remboursements, 1n Actes Médicaux
+Actes Médicaux: code-Actes_médicaux, n° sinistre, date, statut
+must pay, 1n Règlement, 1n client
+Règlement: code-reglement, Mode de règlement, Iban, Date de prélevement
+:
+
+remboursements:code-remboursement, date, motif, montant, période concerné, statut
+underwent, 0n Actes Médicaux, 0n animal
+client: code-client, nom, prénom, adresse, code postal, ville, e_mail, n°tel
+has, 1n client, 1n contrat
+commentaires généraux: code-commentaire, date & heure, content, prenom, nom
+
+user: code-user, nom & prénom, e-mail, mdp, role
+animal: code-animal, nom, type, race, date de naissance, n° pucage/tatouage, sexe, stérilisation
+concerned, 1n animal, 11 contrat
+contrat: code-contrat, n° contrat, date de souscription, mode de souscription, formule, statut, date de résiliation
+may have, 0n commentaires généraux, n1 contrat
+
+  
+!!!!!!!!!!!!!prevoir entité document pour contrat & cg & inpi!!!!!!!!!!!!!!!!!!
